@@ -70,3 +70,11 @@ config="${mod_id}.mixins.json"
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+# Flywheel draws the mod's effects; only the game window needs it
+[[dependencies.${mod_id}]]
+    modId="flywheel"
+    type="required"
+    versionRange="[1.0,)"
+    ordering="NONE"
+    side="CLIENT"
