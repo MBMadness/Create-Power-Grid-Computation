@@ -1,6 +1,6 @@
 # Class schedule
 
-**Status:** times confirmed; the calendar events are still to be created.
+**Status:** set. Repeating events are in Google Calendar (created 2026-11-04).
 
 **Start times (US Eastern):**
 - **Weekdays:** 4:00 PM until 9:00 PM.
@@ -23,4 +23,4 @@
 
 ## Calendar
 - Times: weekdays 4–9 PM, weekends 1–9 PM (US Eastern). The block is the window available; the weekday check-in about school / work still comes first.
-- App: **Google Calendar** (the developer's choice). Claude can create the events once Google Calendar is connected in claude.ai settings.
+- App: **Google Calendar** (connected). Two repeating events with a 10-minute reminder: "Modding class (Java / NeoForge)" Mon–Fri 4–9 PM from 2026-11-05, and "Modding class (weekend, open-ended)" Sat–Sun 1–9 PM from 2026-11-07. Claude may edit them when the schedule changes.
