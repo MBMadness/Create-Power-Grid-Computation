@@ -17,7 +17,7 @@
 1. **Check-in** (weekdays: school / work first?).
 2. **Recall quiz:** no notes, low stakes. It covers the "Retest" list from the last session's log, plus the standing review items.
 3. **Brainstorm**, then zoom in on one smaller part.
-4. **Lesson** built around that part, with mod-themed exercises (hints only when asked).
+4. **Lesson** built around that part, with mod-themed exercises (hints only when asked). **Java example first, then the Minecraft example of the same concept** (the developer's system, from session 2): the plain-Java version isolates the idea and doubles as review; the Minecraft version applies it.
 5. **Practice** in the practice project (the Computation repo is for documentation and the first real mod).
 6. **End-of-session summary** in that session's log: covered, what to retest, where the next session starts.
 

@@ -240,7 +240,7 @@ Concepts to remind the developer of whenever they come up, and to keep in the re
 ### Session format
 1. **Brainstorm** a piece of the mod.
 2. **Second brainstorm:** zoom in on one specific, simpler part of it.
-3. **Lesson** built around that part. It either produces an in-game result, or uses the part as the lesson's subject even when the lesson's code isn't what the part will really be made from.
+3. **Lesson** built around that part, **a Java example first, then a Minecraft example of the same concept**. It either produces an in-game result, or uses the part as the lesson's subject even when the lesson's code isn't what the part will really be made from.
 4. **Keep going (developer's rule):** sessions are semi-free tutoring. Questions drive the lesson; Claude keeps going from one step to the next and only stops when a check-in or the developer's answer says otherwise.
 5. **Exercises are themed on the mod.** Mistakes: the developer finds them; hints only when asked.
 
