@@ -3,8 +3,8 @@
 **Status:** times confirmed; the calendar events are still to be created.
 
 **Start times (US Eastern):**
-- **Weekdays:** 4:00 PM.
-- **Weekends:** around 1–2 PM.
+- **Weekdays:** 4:00 PM until 9:00 PM.
+- **Weekends:** 1:00 PM until 9:00 PM.
 
 ## Rhythm
 | Days | Length | Rules |
@@ -22,5 +22,5 @@
 6. **End-of-session summary** in that session's log: covered, what to retest, where the next session starts.
 
 ## Calendar
-- Times: weekdays 4:00 PM, weekends around 1–2 PM (US Eastern).
+- Times: weekdays 4–9 PM, weekends 1–9 PM (US Eastern). The block is the window available; the weekday check-in about school / work still comes first.
 - App: **Google Calendar** (the developer's choice). Claude can create the events once Google Calendar is connected in claude.ai settings.
