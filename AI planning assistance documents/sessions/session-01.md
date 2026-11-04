@@ -240,3 +240,23 @@ Confirm each item in your own words, or by doing it, before the lesson moves on.
 - Problem: `/give` gives nothing and prints nothing (the item id exists). Checks given in order: cheats (Open to LAN -> Allow Cheats), typing (Enter picking an auto-complete suggestion), the exact id, the whole inventory; then the last lines of latest.log / the Run console (personal details cut).
 - Developer's diagnosis: the plugin's example item / block can be given, the resistor can't -> the resistor isn't registered. Taught: a class's static fields don't run until the class is used; `ModItems.ITEMS.register(modEventBus)` in the constructor is what loads it. Checks: the line exists inside the constructor; it says `ModItems.ITEMS` (not the example's `ITEMS`); `createItems` uses the lowercase MODID; the /give name matches the registered name.
 - Fixed: the `ModItems.ITEMS.register(modEventBus)` line had gone missing; restored, the resistor registers. Tip given: IntelliJ Local History (right-click -> Local History -> Show History) to see and restore lost edits. Next: confirm step 2 (name + texture).
+- Step 2 done: the resistor shows its name and texture.
+
+## End of session 01 (2026-11-04)
+**Covered**
+- Brainstorm: the new mod's core design (see BRAINSTORM.md): parts and modules, making, wiring, computing, vehicles, the player in the machine, materials, multiplayer, the power system.
+- Java: inheritance (`extends`, `super`, overriding, polymorphism), interfaces (`implements`, interface-typed parameters), the entry point (`main`), setters and encapsulation, `static`, lambdas, functional interfaces, deferred creation (`Supplier`).
+- Dependencies: Sable (the `build.gradle` snippet, `api` / `implementation` / `compileOnly`, Sable Companion), Power Grid lessons 1-3 (circuit rules, rotation <-> electricity, loads and heat).
+- Modding practice: step 0 (project anatomy), project structure (packages), step 1 (registering an item), step 2 (lang, model, texture). Two real bugs debugged: the mod id mismatch, the missing `register(modEventBus)` line.
+
+**Retest in the next recall quiz**
+- Encapsulation (why setters: `private` fields).
+- Static methods can't use `this` / instance fields.
+- Functional interfaces (why a lambda fits an interface).
+- Suppliers / deferred creation (standing review item).
+- Why `ModItems.ITEMS.register(modEventBus)` is needed (a class's static fields run only when the class is used).
+
+**Next session starts with**
+- The recall quiz above, then step 1 continued: a creative tab entry for the resistor, then the `part_casing` block + its block item (blockstate, block model, texture); explain-back: why a block's item is registered separately.
+
+**Open from earlier:** the lesson checklist above; scheduling daily classes (deferred until the brainstorm settles).
