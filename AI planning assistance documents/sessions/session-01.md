@@ -221,3 +221,11 @@ Confirm each item in your own words, or by doing it, before the lesson moves on.
 - **Developer's steer:** heat just leaves automatically for small effects (heat mods may hold it later); hidden defects are not the priority: "we are specifically looking at making an implementation; if we overcomplicate, my building will be heavily hampered, and that is attached to my learning". -> Claude moves to implementation: setting up the NeoForge project.
 - **Implementation step 1:** NeoForge project setup (from the official docs): the ModDevGradle 1.21.1 MDK, opening it in IntelliJ (first import is slow), `gradle.properties` keys (mod_id permanent, mod_name, mod_group_id, mod_version), runClient, the Mods list as the first in-game result, `gradlew build`.
 - Developer: the real repository is "Create: Power Grid - Computation" (Claude can be moved there); for now a throwaway practice project, entirely the developer's own ("it's all me").
+
+## Moved to Create: Power Grid - Computation (2026-11-04)
+- The planning documents now live in this repository's `AI planning assistance documents/` folder (no CLAUDE.md, by the developer's choice). This repository holds documentation and, later, the first real mod; practice happens in a separate practice project.
+
+## Practice curriculum (modding, in a practice project made with the IntelliJ Minecraft Development plugin)
+0 project anatomy; 1 registration (item, block + item); 2 assets; 3 data (recipe, loot table, tags); 4 events; 5 block states; 6 block entities (saving); 7 ticking; 8 client / server sync; 9 Power Grid integration (the zero-docs decision); 10 menus / screens; debugging throughout.
+
+- **Step 0, project anatomy:** the plugin generated `java/` with the `@Mod` class, `templates/META-INF/neoforge.mods.toml`, `assets/<modid>/`, `mixins/` (no `data/` yet); not run yet. Explained: the @Mod entry point, the mods.toml template filled from gradle.properties, assets = client / data = server, mixins (powerful, fragile; a late lesson). Task: runClient, find the mod in the Mods list, change mod_name and see it change.
