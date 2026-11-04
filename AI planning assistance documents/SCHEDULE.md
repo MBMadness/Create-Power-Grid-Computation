@@ -21,6 +21,9 @@
 5. **Practice** in the practice project (the Computation repo is for documentation and the first real mod).
 6. **End-of-session summary** in that session's log: covered, what to retest, where the next session starts.
 
+## Axiom: specific objectives (the developer, session 2)
+Every objective that isn't review of something already proficient must be **specific**. It shows the code to work from: a previous example, a new example, or the exact values / names / lines to implement (which file, which method, what to type, what output to expect). A vague instruction ("prove it to yourself") is not an objective.
+
 ## Calendar
 - Times: weekdays 4–9 PM, weekends 1–9 PM (US Eastern). The block is the window available; the weekday check-in about school / work still comes first.
 - App: **Google Calendar** (connected). Two repeating events with a 10-minute reminder: "Modding class (Java / NeoForge)" Mon–Fri 4–9 PM from 2026-11-05, and "Modding class (weekend, open-ended)" Sat–Sun 1–9 PM from 2026-11-07. Claude may edit them when the schedule changes.

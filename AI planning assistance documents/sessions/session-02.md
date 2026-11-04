@@ -12,3 +12,21 @@
 - Corrected with Java examples first (`a.describe()` / `b.describe()` / `Part.getPartsBuilt()`; an interface with one vs two methods), then Minecraft (`Supplier<Item>` has one method, `get()`).
 - **Re-check:** the Supplier / lambda question **correct**. `this` still "only in constructors". Likely source: constructors are the only place `this.` is required (field and parameter share a name); elsewhere it is optional and usually omitted. 2-minute proof task: write `this.field` explicitly in `describe()`, then print two accelerometers.
 - **Retest next session:** `this` in ordinary methods.
+- **New axiom (developer):** objectives must be specific: show previous or new examples, or the code values to implement (unless review of something proficient). Recorded in SCHEDULE.md. The `this` proof task, rewritten to follow it, is below.
+
+### The `this` task, specific version (for the next session)
+1. Open `Accelerometer.java`. In `describe()`, change `voltagein` to `this.voltagein`:
+   ```java
+   return super.describe() + " inputs " + this.voltagein + " volts, and outputs " + voltageout + ".";
+   ```
+2. Run. **Expected:** the output is exactly the same as before (this. was there all along, just unwritten).
+3. In `Main.main`, build two accelerometers with different materials and voltages, and print both:
+   ```java
+   Accelerometer a = new Accelerometer("aluminum", 1, 20, 9, 500);
+   Accelerometer b = new Accelerometer("copper", 2, 10, 12, 800);
+   System.out.println(a.describe());
+   System.out.println(b.describe());
+   ```
+4. **Expected:** two lines with different materials and voltages. One `describe()` method, two results, because `this` is `a` in the first call and `b` in the second.
+5. Explain back in one sentence: what is `this` during `b.describe()`?
+- The developer is napping. Study time is Claude's: research teaching methods (programming, languages, game design), commonalities with referenced results, into TEACHING-METHODS.md.
