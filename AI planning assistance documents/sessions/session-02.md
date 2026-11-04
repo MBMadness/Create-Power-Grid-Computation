@@ -7,3 +7,8 @@
 
 ## Notes during the session
 - **New system (developer):** each lesson has a Java review example before the Minecraft example. Claude's refinement: both examples cover the same concept. Added to SCHEDULE.md and BRAINSTORM.md.
+- Check-in: a short session today.
+- **Recall quiz:** encapsulation **correct** (wrong in session 01: improved). Static vs `this`: wrong ("this only works inside constructors"). Functional interfaces: wrong ("its method returns a boolean"; same as session 01).
+- Corrected with Java examples first (`a.describe()` / `b.describe()` / `Part.getPartsBuilt()`; an interface with one vs two methods), then Minecraft (`Supplier<Item>` has one method, `get()`).
+- **Re-check:** the Supplier / lambda question **correct**. `this` still "only in constructors". Likely source: constructors are the only place `this.` is required (field and parameter share a name); elsewhere it is optional and usually omitted. 2-minute proof task: write `this.field` explicitly in `describe()`, then print two accelerometers.
+- **Retest next session:** `this` in ordinary methods.
