@@ -30,3 +30,5 @@
 4. **Expected:** two lines with different materials and voltages. One `describe()` method, two results, because `this` is `a` in the first call and `b` in the second.
 5. Explain back in one sentence: what is `this` during `b.describe()`?
 - The developer is napping. Study time is Claude's: research teaching methods (programming, languages, game design), commonalities with referenced results, into TEACHING-METHODS.md.
+- Study time (developer napping): researched teaching methods across programming education, learning science, language learning, music / skill practice and game-design teaching. Findings in `TEACHING-METHODS.md`: worked examples + fading (expertise reversal), trace / predict before write (PRIMM; Make is the hard step), spaced retrieval, interleaving, free-text self-explanation, notional-machine diagrams (the `this` misconception is documented: Ragonis & Shmallo), task / process feedback; with caveats: Parsons problems, productive failure, tutoring / mastery, deliberate practice, i+1, playtest loops.
+- Changes proposed for sessions (end of TEACHING-METHODS.md), for the developer to confirm.
