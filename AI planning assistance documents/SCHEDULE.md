@@ -1,6 +1,10 @@
 # Class schedule
 
-**Status:** draft. Start times, time zone and the calendar app are still to be confirmed by the developer.
+**Status:** times confirmed; the calendar events are still to be created.
+
+**Start times (US Eastern):**
+- **Weekdays:** 4:00 PM.
+- **Weekends:** around 1–2 PM.
 
 ## Rhythm
 | Days | Length | Rules |
@@ -18,5 +22,5 @@
 6. **End-of-session summary** in that session's log: covered, what to retest, where the next session starts.
 
 ## Calendar
-- Times: **TBD**.
-- App: **TBD**. The easiest route for iOS is an `.ics` calendar file, which imports into Apple Calendar with one tap. Google Calendar also works, through a connector in claude.ai settings.
+- Times: weekdays 4:00 PM, weekends around 1–2 PM (US Eastern).
+- App: **Google Calendar** (the developer's choice). Claude can create the events once Google Calendar is connected in claude.ai settings.
