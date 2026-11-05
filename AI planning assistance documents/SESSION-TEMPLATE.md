@@ -34,6 +34,13 @@ For review of proficient material: less scaffolding.
 
 **Indicative wording (the developer, session 03):** questions say what fills what, instead of asking for a bare label. E.g. not "what is `this`?" but "when `b.setMaterial(\"titanium\")` runs, which object fills in `this`, and which value fills in `material`?"
 
+**Syntax rules (the developer, session 03):**
+- **One new syntax idea per step.**
+- **New syntax always gets a plain-Java example first**, then its Minecraft use.
+- **Reinforce before stacking:** a concept is practised at least twice before the next one builds on it.
+- **Flag new syntax** by name when it first appears.
+- Minecraft code is explained **line by line, with diagrams**.
+
 ## 4. If stuck: the hint ladder
 1. A general nudge.
 2. An intermediate step.
