@@ -129,6 +129,11 @@ sequenceDiagram
 - `data/<modid>/` = game rules (server): recipes, loot, tags.
 - Learned: session 01.
 
+### Events (NeoForge's hooks)
+- NeoForge adds **hooks** at useful points inside Minecraft's own code and fires an **event** there; mods attach methods to them. The result goes into Minecraft's own process (integration, not a separate system).
+- So far: `RegisterEvent` (registration) and `BuildCreativeModeTabContentsEvent` (fired once per creative tab; `event.getTabKey() == CreativeModeTabs.INGREDIENTS` picks the tab, `event.accept(ModItems.RESISTOR)` adds to it). Connected with `modEventBus.addListener(this::addCreative)`.
+- Learned: session 03.
+
 ### Item appearance
 - Lang key `item.<modid>.<name>`; model `models/item/<name>.json` (parent `item/generated`, `layer0` → `textures/item/<name>.png`).
 - Checkered purple-black = a path mismatch.
