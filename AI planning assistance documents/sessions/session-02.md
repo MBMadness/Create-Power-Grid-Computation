@@ -42,4 +42,5 @@
 ## End of session 02 (2026-11-05)
 **Covered:** the Java-before-Minecraft system; the specific-objectives axiom; teaching-methods research (TEACHING-METHODS.md); the reference sheet (REFERENCE.md); diagram standards (DIAGRAMS.md); the session template (SESSION-TEMPLATE.md); a mock lesson.
 **Retest next time:** `this` in ordinary methods (wrong twice); functional interfaces (why a lambda fits); suppliers (standing item).
-**Next session starts with:** the `this` lesson for real, as in the mock (recall quiz, worked example, diagrams A-C with keys, predict / run / shown failure / modify, explain-back); then a creative-tab entry for the resistor and the `part_casing` block.
+**Next session starts with:** the `this` lesson for real, as in the mock (recall quiz, worked example, diagrams A-C with keys, predict / run / shown failure / modify, explain-back); then a creative-tab entry for the resistor and the **accelerometer** test block (corrected: `part_casing` was Claude's invented name, never brainstormed; the developer's first machine is the accelerometer).
+- Correction (developer): the test block is the **accelerometer**, from the brainstorm (turbine -> accelerometer -> RPM monitor), not `part_casing` (Claude had invented that name in step 1). Next session's block is the accelerometer.
