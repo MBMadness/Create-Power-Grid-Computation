@@ -30,10 +30,13 @@ Then the **Minecraft example of the same concept**:
 
 For review of proficient material: less scaffolding.
 
+**Quiz rule:** questions use only variables, classes and objects the developer has seen declared (preferably in their own code); never undeclared names.
+
 ## 4. If stuck: the hint ladder
 1. A general nudge.
 2. An intermediate step.
 3. Teach it outright ("lesson-ify, don't challenge-ify").
+4. If it still doesn't land: stop drilling, ground it in the developer's own working code, and move it to the Retest list.
 
 ## 5. Explain-back (free text)
 - One or two sentences in your own words.
