@@ -1,6 +1,6 @@
 # Reference sheet
 
-A growing set of standing references, so recall doesn't depend on memory alone. An entry is added when a concept is first taught, and each one says what it is, gives the smallest example, and links to where it was learned. The sheet is grouped by learning area. Diagrams are Mermaid (GitHub draws them).
+A growing set of standing references, so recall doesn't depend on memory alone. An entry is added when a concept is first taught, and each one says what it is, gives the smallest example, and links to where it was learned. The sheet is grouped by learning area. Diagrams follow `DIAGRAMS.md` (UML, drawn by Mermaid; GitHub draws them).
 
 Entries are short on purpose. Recall quizzes still happen **without** this sheet; it's for looking things up while building.
 
@@ -40,11 +40,16 @@ Entries are short on purpose. Recall quizzes still happen **without** this sheet
 - Learned: sessions 01–02 (a known beginner misconception).
 
 ```mermaid
-flowchart LR
-  va["variable a"] --> A["object #1<br/>material = aluminum"]
-  vb["variable b"] --> B["object #2<br/>material = copper"]
-  t1(["during a.describe(): this"]) -.-> A
-  t2(["during b.describe(): this"]) -.-> B
+sequenceDiagram
+  participant M as main
+  participant A as a : Accelerometer
+  participant B as b : Accelerometer
+  M->>+A: describe()
+  Note right of A: this = a
+  A-->>-M: "... aluminum ..."
+  M->>+B: describe()
+  Note right of B: this = b
+  B-->>-M: "... copper ..."
 ```
 
 ### `private` / encapsulation / setter
@@ -91,15 +96,24 @@ Only the basic functions developers call are covered here. Minecraft's large int
 
 ```mermaid
 sequenceDiagram
-  participant Mod as Your @Mod class
-  participant DR as ModItems.ITEMS
+  participant Mod as YourMod (constructor)
+  participant DR as ITEMS : DeferredRegister
   participant NF as NeoForge
-  participant Reg as Item registry
-  Mod->>DR: register("resistor", () -> new Item(...))
-  Mod->>DR: register(modEventBus)
-  NF->>DR: RegisterEvent (registries open)
-  DR->>DR: supplier.get() builds the item
-  DR->>Reg: stored as modid:resistor
+  participant R as Item registry
+  rect rgb(240, 245, 255)
+  Note over Mod,R: Phase 1: your mod loads
+  Mod->>+DR: register("resistor", supplier)
+  DR-->>-Mod: RESISTOR (empty holder)
+  Mod->>+DR: register(modEventBus)
+  DR-->>-Mod: listening for RegisterEvent
+  end
+  rect rgb(245, 255, 240)
+  Note over Mod,R: Phase 2: registries open
+  NF->>+DR: RegisterEvent
+  DR->>DR: supplier.get() builds the Item
+  DR->>R: add "modid:resistor"
+  DR-->>-NF: done
+  end
 ```
 - Learned: session 01.
 
