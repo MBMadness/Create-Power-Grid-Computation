@@ -44,3 +44,9 @@
 **Retest next time:** `this` in ordinary methods (wrong twice); functional interfaces (why a lambda fits); suppliers (standing item).
 **Next session starts with:** the `this` lesson for real, as in the mock (recall quiz, worked example, diagrams A-C with keys, predict / run / shown failure / modify, explain-back); then a creative-tab entry for the resistor and the **accelerometer** test block (corrected: `part_casing` was Claude's invented name, never brainstormed; the developer's first machine is the accelerometer).
 - Correction (developer): the test block is the **accelerometer**, from the brainstorm (turbine -> accelerometer -> RPM monitor), not `part_casing` (Claude had invented that name in step 1). Next session's block is the accelerometer.
+
+## Brainstorm: the accelerometer test block (for session 03)
+- Properties: metal, needs a pickaxe; "something else" (to be named by the developer).
+- Grows toward: **facing the player first** (block states), then reading a real **Create shaft**.
+- The Java `Accelerometer` class and the block stay **separate for now**.
+- Look: the developer draws the item texture. For the block: the developer is a strong 3D modeller and has a Blockbench test file (not loaded yet; it is on the developer's PC, not in the repo). Goal: a reliable Blockbench -> game path for quick high-quality models. To check in the NeoForge docs: vanilla JSON block models (cubes, limited rotations) vs NeoForge's custom model loaders (e.g. OBJ) for meshes beyond what JSON allows.
