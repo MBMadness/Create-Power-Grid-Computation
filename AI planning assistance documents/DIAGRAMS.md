@@ -18,7 +18,16 @@ After Ambler, *The Elements of UML 2.0 Style*:
 - **Short labels:** method names and values, not full code lines.
 - **Notes** only for the one key fact (e.g. `this = a`).
 - **Phases** (shaded bands) when something happens at two different times, as in registration.
-- **Large text:** 20 px Arial, black on white.
+- **Large text:** about 18–20 px Arial, black on white.
+- **Lines are solid, and hidden only where they cross text:** each label sits on its own background, so a line disappears behind the words and nowhere else (the developer, session 02). No blanket dotting.
+- **Objects look like objects everywhere:** a lifeline for an object starts from a UML object box (an underlined `name : Type`, a divider, then its slots), the same notation as the object diagram (the developer, session 02).
+- **Lifelines end just below the last message.**
+
+## Explaining the notation
+The **first few times** a kind of diagram appears in a lesson, it comes with a short key to its symbols (e.g. "solid arrow = a call; dashed arrow = what comes back; grey bar = the object is busy; underlined `a : Accelerometer` = an object named a, of class Accelerometer"). Once the developer reads that kind of diagram comfortably, the key is dropped.
+
+## How they're made
+Mermaid renders the diagram; a small post-processing step then turns object lifelines into object boxes, makes lines solid, puts a background behind each label, and trims the lifelines. This is a docs tool kept in Claude's scratchpad, not part of the mod. Diagrams embedded in these docs are plain Mermaid (GitHub's own rendering); the polished images are sent in chat.
 
 ## Sources
 - [uml-diagrams.org: UML object](https://uml-diagrams.org/object.html) · [Wikipedia: Object diagram](https://en.wikipedia.org/wiki/Object_diagram) · [UML spec excerpt: InstanceSpecification](https://site.uottawa.ca/~tcl/gradtheses/mnojoumian/ThesisFiles/FinalSpec/UML/7.3.22.html)
