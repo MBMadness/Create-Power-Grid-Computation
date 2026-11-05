@@ -37,3 +37,9 @@
 - Developer: the first two diagrams were hard to read; asked Claude to study UML standards. Researched UML 2.5 instance notation, sequence-diagram conventions and Ambler's readability rules; redrew three diagrams (object diagram with underlined `name : Type` + slots; sequence diagram for `this`; registration in two phases with activations and dashed returns). Rules saved in `DIAGRAMS.md`; REFERENCE.md diagrams updated. (PlantUML was tried; Maven central returned HTTP 429, so Mermaid stayed.)
 - Developer's diagram rules: (1) explain the UML meanings for the first few diagrams of each kind in lessons; (2) lines dotted / hidden ONLY where they cross text (not dotted everywhere); (3) nitpick: the `this` diagram must use the UML object notation that was introduced. Fixed: solid lines with a background behind each label, object boxes on the lifelines, single underline, lifelines trimmed. Recorded in DIAGRAMS.md.
 - Diagrams approved. Session template saved as SESSION-TEMPLATE.md (collects SCHEDULE / TEACHING-METHODS / DIAGRAMS rules).
+- Mock lesson ("this, the current object") run through the template with three rendered diagrams (object diagram, sequence for `this`, Minecraft: two DeferredRegister objects). Developer: good; not run today.
+
+## End of session 02 (2026-11-05)
+**Covered:** the Java-before-Minecraft system; the specific-objectives axiom; teaching-methods research (TEACHING-METHODS.md); the reference sheet (REFERENCE.md); diagram standards (DIAGRAMS.md); the session template (SESSION-TEMPLATE.md); a mock lesson.
+**Retest next time:** `this` in ordinary methods (wrong twice); functional interfaces (why a lambda fits); suppliers (standing item).
+**Next session starts with:** the `this` lesson for real, as in the mock (recall quiz, worked example, diagrams A-C with keys, predict / run / shown failure / modify, explain-back); then a creative-tab entry for the resistor and the `part_casing` block.
