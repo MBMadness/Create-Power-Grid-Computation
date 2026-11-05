@@ -79,3 +79,10 @@ Seven ideas come up again and again across the fields.
   - For us: reviews lead with the one or two points that matter, not every nit. Exercises themed on the developer's own mod, plus their choice of topics, already support autonomy.
 
 **Searched, not yet deep:** music-teaching specifics, long-term retention of programming skills. These are candidates for the next study time.
+
+## The developer's adjustments (session 02, after the mock session)
+1. **Visuals are rendered diagrams, not ASCII:** rectangles and text from software (Mermaid, which GitHub draws directly in these docs; rendered to images in chat). No generated art.
+2. **Failure points are shown, not caused:** an investigation shows the error or wrong output as an example, and the task is a correct change. Deliberately breaking working code adds stress and feels redundant for a perfection-minded learner.
+3. **Minecraft through UML:** call flows as UML (sequence and class diagrams). Lessons reference only the basic functions a developer calls; Minecraft's larger internal design (rendering, maths, rules) is only mentioned by name.
+4. **A reference sheet** (`REFERENCE.md`): standing entries for classes, variables, objects and so on, grouped by learning area, added as each is taught. It takes the load off memory while building; recall quizzes still happen without it.
+
