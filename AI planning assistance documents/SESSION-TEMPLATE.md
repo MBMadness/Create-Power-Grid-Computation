@@ -32,6 +32,8 @@ For review of proficient material: less scaffolding.
 
 **Quiz rule:** questions use only variables, classes and objects the developer has seen declared (preferably in their own code); never undeclared names.
 
+**Indicative wording (the developer, session 03):** questions say what fills what, instead of asking for a bare label. E.g. not "what is `this`?" but "when `b.setMaterial(\"titanium\")` runs, which object fills in `this`, and which value fills in `material`?"
+
 ## 4. If stuck: the hint ladder
 1. A general nudge.
 2. An intermediate step.

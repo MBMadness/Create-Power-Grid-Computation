@@ -35,6 +35,13 @@ Entries are short on purpose. Recall quizzes still happen **without** this sheet
 
 ### `this`
 - **The object the method was called on.** In `b.describe()`, `this` is `b`.
+- Think of it as a **hidden parameter**: you never write it in the brackets, but every call fills it in with the object left of the dot.
+  ```
+  b.setMaterial("titanium")
+  │             └─ fills the parameter  material
+  └─ fills the hidden parameter  this
+  ```
+- `this` is always an **object** (a thing with fields), never the method or an argument.
 - Required only where a field and a parameter share a name (constructors, setters); elsewhere it's optional and usually left out.
 - Static methods have no `this`.
 - Learned: sessions 01–02 (a known beginner misconception).
