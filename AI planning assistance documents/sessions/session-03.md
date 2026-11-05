@@ -7,3 +7,7 @@
 4. Practice: a creative-tab entry for the resistor; the accelerometer block (metal, pickaxe, a specific sound; the developer's Blockbench JSON model; then facing the player).
 
 ## Notes during the session
+- Check-in: no other work; go.
+- **Recall:** supplier / functional-interface question **correct** (wrong in sessions 01-02: now learned); deferred creation (when the Item is built) **correct**; `this` beyond constructors: "not sure" -> today's lesson.
+- **Lesson: `this`** (Java first): labelled worked example; diagram A (object diagram) and B (sequence) with keys; the idea: one method, run for the object left of the dot. Predict `b.describe()` voltage -> **correct (12.0)**.
+- Run task (expected output given); Investigate shown, not caused: a setter with `material = material;` silently does nothing, `this.material = material;` fixes it (this. required only where names clash). Modify task: correct `setMaterial` + `whoAmI()`; expected `I am the steel accelerometer` / `I am the copper accelerometer`.
