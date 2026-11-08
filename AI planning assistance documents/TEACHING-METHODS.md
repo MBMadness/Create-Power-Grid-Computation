@@ -86,3 +86,6 @@ Seven ideas come up again and again across the fields.
 3. **Minecraft through UML:** call flows as UML (sequence and class diagrams). Lessons reference only the basic functions a developer calls; Minecraft's larger internal design (rendering, maths, rules) is only mentioned by name.
 4. **A reference sheet** (`REFERENCE.md`): standing entries for classes, variables, objects and so on, grouped by learning area, added as each is taught. It takes the load off memory while building; recall quizzes still happen without it.
 
+## The developer's method: Desmos as the visual bridge (2026-11-08)
+Each concept is introduced in Java (or referred to) with its Desmos analog; the developer builds it in Desmos to see it, then writes or uses the Java. This matches **concreteness fading** (concrete → representational → abstract) and **dual coding** (picture + formula), and gives a known correct answer to check Java output against. Desmos is limited on purpose to features close to code (functions, sliders, piecewise, lists, a ticker), not systems or advanced parametrics.
+

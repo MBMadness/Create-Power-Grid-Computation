@@ -150,3 +150,17 @@ sequenceDiagram
 ## Power Grid (from its mod page)
 - Circuits need loops; `V = I × R`; at a junction, current in = current out; higher voltage = less loss; production and demand must balance.
 - Learned: session 01.
+
+---
+
+## Desmos ↔ Java
+| Desmos | Java |
+|---|---|
+| `f(x) = 0.67·D·√(P₀/P₁)` | a `static double f(double x, …)` method |
+| a slider (`D = 0.3`) | a parameter or a field |
+| piecewise `{x < 0: 0, x}` | `if` / `else`, or `x < 0 ? 0 : x` |
+| a list `[1, 2, 3]` | an array or a `List<Double>` |
+| a ticker that updates a value | a method run every Minecraft tick (block entities) |
+| `\sqrt{}`, `\frac{}{}` | `Math.sqrt(...)`, `/` |
+- Learned: 2026-11-08 (the developer's method).
+

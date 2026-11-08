@@ -41,6 +41,8 @@ For review of proficient material: less scaffolding.
 - **Flag new syntax** by name when it first appears.
 - Minecraft code is explained **line by line, with diagrams**.
 
+**Desmos analogs (the developer, 2026-11-08):** Claude introduces (or refers to) a concept in Java and gives its **Desmos analog**; the developer **builds it in Desmos** (LaTeX graphing) to see it, using only Desmos features close to code (functions, sliders, piecewise, lists, a ticker; no systems or advanced parametrics). Desmos values then serve as checkable expected outputs. Translation table in REFERENCE.md.
+
 ## 4. If stuck: the hint ladder
 1. A general nudge.
 2. An intermediate step.
